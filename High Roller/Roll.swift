@@ -26,18 +26,37 @@ import Foundation
 
 struct Roll {
 
+  var dice: [Dice] = []
   var numberOfSides = 6
-
-  func changeNumberOfDice(newDiceCount: Int) {
+  
+  mutating func changeNumberOfDice(newDiceCount: Int) {
+    dice = []
+    for _ in 0 ..< newDiceCount {
+      dice.append(Dice())
+    }
   }
-
-  func rollAll() {
-  }
-
-  func changeValueForDie(at diceIndex: Int, to newValue: Int) {
-  }
-
+  
   var allDiceValues: [Int] {
-    return [1, 6]
+    return dice.flatMap { $0.value }
+  }
+  
+  mutating func rollAll() {
+    for index in 0 ..< dice.count {
+      dice[index].rollDie(numberOfSides: numberOfSides)
+    }
+  }
+  
+  mutating func changeValueForDie(at diceIndex: Int, to newValue: Int) {
+    if diceIndex < dice.count {
+      dice[diceIndex].value = newValue
+    }
+  }
+  
+  func totalForDice() -> Int {
+    let total = dice
+      .flatMap { $0.value }
+//      .reduce(0) { $0 - $1 }    // bug line
+      .reduce(0) { $0 + $1 }
+    return total
   }
 }

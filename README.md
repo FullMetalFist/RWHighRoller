@@ -1,7 +1,10 @@
 ## Ray Wenderlich macOS app Unit Testing
 
-Title: Unit Testing on macOS: Part 1/2
+Unit Testing on macOS:
+Part 1/2
 URL: https://www.raywenderlich.com/141405/unit-testing-macos-part-12
+Part 2/2
+URL: https://www.raywenderlich.com/142090/unit-testing-macos-part-22
 
 ## Why am I doing this?
 
