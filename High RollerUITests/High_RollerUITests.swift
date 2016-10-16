@@ -20,42 +20,31 @@
  * THE SOFTWARE.
  */
 
-import Foundation
+import XCTest
 
-struct Roll {
+class High_RollerUITests: XCTestCase {
 
-  var dice: [Dice] = []
-  var numberOfSides = 6
+  override func setUp() {
+    super.setUp()
 
-  mutating func changeNumberOfDice(newDiceCount: Int) {
-    dice = []
-    for _ in 0 ..< newDiceCount {
-      dice.append(Dice())
-    }
+    // Put setup code here. This method is called before the invocation of each test method in the class.
+
+    // In UI tests it is usually best to stop immediately when a failure occurs.
+    continueAfterFailure = false
+    // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
+    XCUIApplication().launch()
+
+    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
   }
 
-  var allDiceValues: [Int] {
-    return dice.flatMap { $0.value}
+  override func tearDown() {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+    super.tearDown()
   }
 
-  mutating func rollAll() {
-    for index in 0 ..< dice.count {
-      dice[index].rollDie(numberOfSides: numberOfSides)
-    }
+  func testExample() {
+    // Use recording to get started writing UI tests.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
   }
 
-  mutating func changeValueForDie(at diceIndex: Int, to newValue: Int) {
-    if diceIndex < dice.count {
-      dice[diceIndex].value = newValue
-    }
-  }
-
-  func totalForDice() -> Int {
-    let total = dice
-      .flatMap { $0.value }
-      // .reduce(0) { $0 - $1 }       // bug line
-      .reduce(0) { $0 + $1 }          // fixed
-    return total
-  }
-  
 }

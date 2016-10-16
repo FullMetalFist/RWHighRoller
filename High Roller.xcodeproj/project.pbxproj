@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2671325E1D6D684A004B72E8 /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2671325D1D6D684A004B72E8 /* DiceTests.swift */; };
+		267132601D6D697C004B72E8 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2671325F1D6D697C004B72E8 /* Dice.swift */; };
+		267132621D6D6E0C004B72E8 /* RollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267132611D6D6E0C004B72E8 /* RollTests.swift */; };
 		267132661D6D750F004B72E8 /* WebSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267132651D6D750F004B72E8 /* WebSource.swift */; };
-		2671326C1D6D8903004B72E8 /* High_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2671326B1D6D8903004B72E8 /* High_RollerTests.swift */; };
 		268F3AC01D4594EE0080CAD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F3ABF1D4594EE0080CAD0 /* AppDelegate.swift */; };
 		268F3AC21D4594EE0080CAD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268F3AC11D4594EE0080CAD0 /* ViewController.swift */; };
 		268F3AC41D4594EE0080CAD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268F3AC31D4594EE0080CAD0 /* Assets.xcassets */; };
@@ -16,9 +18,6 @@
 		26AE23921D48731000E21F46 /* Roll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AE23911D48731000E21F46 /* Roll.swift */; };
 		26E193261D4B07C700524E79 /* ViewControllerDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E193251D4B07C700524E79 /* ViewControllerDisplay.swift */; };
 		26E881271D5D895100D57EAD /* High_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E881261D5D895100D57EAD /* High_RollerUITests.swift */; };
-		7CCF5D5B1D8503F20077E63F /* DiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF5D5A1D8503F20077E63F /* DiceTests.swift */; };
-		7CCF5D5E1D8509170077E63F /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF5D5D1D8509170077E63F /* Dice.swift */; };
-		7CCF5D601D8640C90077E63F /* RollTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF5D5F1D8640C90077E63F /* RollTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2671325D1D6D684A004B72E8 /* DiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceTests.swift; sourceTree = "<group>"; };
+		2671325F1D6D697C004B72E8 /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		267132611D6D6E0C004B72E8 /* RollTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RollTests.swift; sourceTree = "<group>"; };
 		267132651D6D750F004B72E8 /* WebSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSource.swift; sourceTree = "<group>"; };
-		2671326B1D6D8903004B72E8 /* High_RollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = High_RollerTests.swift; sourceTree = "<group>"; };
 		268F3ABC1D4594EE0080CAD0 /* High Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		268F3ABF1D4594EE0080CAD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		268F3AC11D4594EE0080CAD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,9 +55,6 @@
 		26AE23911D48731000E21F46 /* Roll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Roll.swift; sourceTree = "<group>"; };
 		26E193251D4B07C700524E79 /* ViewControllerDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerDisplay.swift; sourceTree = "<group>"; };
 		26E881261D5D895100D57EAD /* High_RollerUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = High_RollerUITests.swift; sourceTree = "<group>"; };
-		7CCF5D5A1D8503F20077E63F /* DiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiceTests.swift; path = Model/DiceTests.swift; sourceTree = "<group>"; };
-		7CCF5D5D1D8509170077E63F /* Dice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dice.swift; path = Model/Dice.swift; sourceTree = "<group>"; };
-		7CCF5D5F1D8640C90077E63F /* RollTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RollTests.swift; path = Model/RollTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				268F3AD31D4594EF0080CAD0 /* Info.plist */,
-				2671326B1D6D8903004B72E8 /* High_RollerTests.swift */,
-				7CCF5D5C1D8503F80077E63F /* Model */,
+				2671325D1D6D684A004B72E8 /* DiceTests.swift */,
+				267132611D6D6E0C004B72E8 /* RollTests.swift */,
 			);
 			path = "High RollerTests";
 			sourceTree = "<group>";
@@ -142,18 +140,9 @@
 		26AE238E1D486A0400E21F46 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2671325F1D6D697C004B72E8 /* Dice.swift */,
 				26AE23911D48731000E21F46 /* Roll.swift */,
 				267132651D6D750F004B72E8 /* WebSource.swift */,
-				7CCF5D5D1D8509170077E63F /* Dice.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		7CCF5D5C1D8503F80077E63F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7CCF5D5A1D8503F20077E63F /* DiceTests.swift */,
-				7CCF5D5F1D8640C90077E63F /* RollTests.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -301,9 +290,9 @@
 			files = (
 				268F3AC21D4594EE0080CAD0 /* ViewController.swift in Sources */,
 				26E193261D4B07C700524E79 /* ViewControllerDisplay.swift in Sources */,
+				267132601D6D697C004B72E8 /* Dice.swift in Sources */,
 				26AE23921D48731000E21F46 /* Roll.swift in Sources */,
 				268F3AC01D4594EE0080CAD0 /* AppDelegate.swift in Sources */,
-				7CCF5D5E1D8509170077E63F /* Dice.swift in Sources */,
 				267132661D6D750F004B72E8 /* WebSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,9 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCF5D5B1D8503F20077E63F /* DiceTests.swift in Sources */,
-				7CCF5D601D8640C90077E63F /* RollTests.swift in Sources */,
-				2671326C1D6D8903004B72E8 /* High_RollerTests.swift in Sources */,
+				267132621D6D6E0C004B72E8 /* RollTests.swift in Sources */,
+				2671325E1D6D684A004B72E8 /* DiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

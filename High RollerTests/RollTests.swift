@@ -20,42 +20,35 @@
  * THE SOFTWARE.
  */
 
-import Foundation
+import XCTest
+@testable import High_Roller
 
-struct Roll {
+class RollTests: XCTestCase {
 
-  var dice: [Dice] = []
-  var numberOfSides = 6
+  var roll: Roll!
 
-  mutating func changeNumberOfDice(newDiceCount: Int) {
-    dice = []
-    for _ in 0 ..< newDiceCount {
-      dice.append(Dice())
-    }
+  override func setUp() {
+    super.setUp()
+
+    roll = Roll()
+    roll.changeNumberOfDice(newDiceCount: 5)
   }
 
-  var allDiceValues: [Int] {
-    return dice.flatMap { $0.value}
+  func testCreatingRollOfDice() {
+    XCTAssertNotNil(roll)
+    XCTAssertEqual(roll.dice.count, 5)
   }
 
-  mutating func rollAll() {
-    for index in 0 ..< dice.count {
-      dice[index].rollDie(numberOfSides: numberOfSides)
-    }
+  func testTotalForDiceBeforeRolling_ShouldBeZero() {
+    let total = roll.totalForDice()
+    XCTAssertEqual(total, 0)
   }
 
-  mutating func changeValueForDie(at diceIndex: Int, to newValue: Int) {
-    if diceIndex < dice.count {
-      dice[diceIndex].value = newValue
-    }
-  }
-
-  func totalForDice() -> Int {
-    let total = dice
-      .flatMap { $0.value }
-      // .reduce(0) { $0 - $1 }       // bug line
-      .reduce(0) { $0 + $1 }          // fixed
-    return total
+  func testTotalForDiceAfterRolling_ShouldBeBetween5And30() {
+    roll.rollAll()
+    let total = roll.totalForDice()
+    XCTAssertGreaterThanOrEqual(total, 5)
+    XCTAssertLessThanOrEqual(total, 30)
   }
   
 }

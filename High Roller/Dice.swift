@@ -22,40 +22,12 @@
 
 import Foundation
 
-struct Roll {
+struct Dice {
 
-  var dice: [Dice] = []
-  var numberOfSides = 6
+  var value: Int?
 
-  mutating func changeNumberOfDice(newDiceCount: Int) {
-    dice = []
-    for _ in 0 ..< newDiceCount {
-      dice.append(Dice())
-    }
-  }
-
-  var allDiceValues: [Int] {
-    return dice.flatMap { $0.value}
-  }
-
-  mutating func rollAll() {
-    for index in 0 ..< dice.count {
-      dice[index].rollDie(numberOfSides: numberOfSides)
-    }
-  }
-
-  mutating func changeValueForDie(at diceIndex: Int, to newValue: Int) {
-    if diceIndex < dice.count {
-      dice[diceIndex].value = newValue
-    }
-  }
-
-  func totalForDice() -> Int {
-    let total = dice
-      .flatMap { $0.value }
-      // .reduce(0) { $0 - $1 }       // bug line
-      .reduce(0) { $0 + $1 }          // fixed
-    return total
+  mutating func rollDie(numberOfSides: Int = 6) {
+    value = Int(arc4random_uniform(UInt32(numberOfSides))) + 1
   }
   
 }
